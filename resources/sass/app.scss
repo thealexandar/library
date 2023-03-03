@@ -1,8 +1,107 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+.navbar {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.custom-nav-item {
+    .nav-link {
+        color: #2c3e50;
+        font-size: 16px;
+    }
+    background: #55efc4;
+    padding: 0 20px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.custom-login-btn {
+    background: #55efc4;
+    border: 0;
+    color: #2c3e50;
+    &:hover {
+        background: #55efc3c9;
+        color: #2c3e50;
+    }
+}
+.main-content {
+    background: #ecf0f1;
+    min-height: calc(100vh - 100px);
+    margin-top: 100px;
+}
+.card-wrap {
+    height: calc(100vh - 100px);
+}
+.auth-card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-top: 30px solid #55efc4;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 50px;
+    padding: 20px 0 30px 0;
+    .card-header {
+        border: 0;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        padding: 15px 0;
+    }
+    .form-control {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        background-color: transparent !important;
+        border-radius: 0;
+        &:focus, &:active {
+            outline: none !important;
+            box-shadow: none;
+        }
+    }
+}
+
+.sidebar {
+    font-family: 'PT Sans', sans-serif !important;
+    background: #FFF;
+    min-height: 100vh;
+    .nav-link {
+        color: #7f8c8d;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+.main {
+    background-color: #ecf0f1;
+    .heading {
+        padding: 15px 0 15px 0;
+    }
+    .card-heading {
+        border: 0;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+    .list-card {
+        border: 0;
+        margin-bottom: 7px;
+        padding: 10px 0;
+        p {
+            margin: 0;
+        }
+    }
+}

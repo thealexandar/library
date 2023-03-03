@@ -9,7 +9,7 @@
                     <a class="nav-link" href="{{ route('authors') }}">Authors</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('books') }}">Books</a>
+                    <a class="nav-link" href="#">Books</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Users</a>
@@ -17,7 +17,7 @@
             </ul>
         </div>
         <div class="col-lg-10 main">
-            <h1>Dashboard</h1>
+            <h1>Books</h1>
         </div>
     </div>
 </div>
